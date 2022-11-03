@@ -91,16 +91,44 @@
         .ep1-text {
             width: 80%;
             height: 60%;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 35px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-top: 20%;
+        }
+        .ep1-text h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 100px;
             letter-spacing: 0.1em;
             color: #FFFFFF;
-            margin: auto;
-            text-overflow: ellipsis;
-
         }
+        .ep1-text p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-align: left;
+        }
+        @media (max-width: 800px) {
+            .ep1-text {
+                margin-top: 10px;
+            }
+            .ep1-text h2 {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 30px;
+              
+            }
+            .ep1-text p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            
+            }
 
         @media (max-width: 600px) {
             .detail-left-top {
@@ -110,16 +138,28 @@
                 display: flex;
             }
 
+            
             .ep1-text {
                 width: 80%;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 18px;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 10%;
+                margin-top: 10px;
+            }
+            .ep1-text h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
                 letter-spacing: 0.1em;
                 color: #FFFFFF;
-                margin-top: 30px;
-
+            }
+            .ep1-text p {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                text-align: left;
             }
         }
 
